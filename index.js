@@ -1,7 +1,12 @@
-const picam = require('node-picamera');
+// require module
+const raspberryPiCamera = require('raspberry-pi-camera-native');
 
-picam.video('filename.h264', 1000, {}, function(err, stdin, stdout) {
-    if (err) throw err;
-    console.log('stdin: ', stdin);
-    console.log('stdout: ', stdout);
+// add frame data event listener
+raspberryPiCamera.on('frame', frameData => {
+	// frameData is a Node.js Buffer
+    // ...
+    console.log(frameData);
 });
+
+// start capture
+raspberryPiCamera.start();

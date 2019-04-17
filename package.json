@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-picamera": "0.0.1",
-    "pi-camera-connect": "^0.2.0"
+    "pi-camera-connect": "^0.2.0",
+    "raspberry-pi-camera-native": "^0.0.0"
   },
   "repository": {
     "type": "git",
